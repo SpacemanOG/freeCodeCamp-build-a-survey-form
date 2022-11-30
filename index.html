@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>spaceman(og)</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<!-- BODY STARTS HERE -->
+
+<body>
+    <div class="container">
+
+
+        <!-- HEADER STARTS HERE -->
+        <header class="header">
+            <h1 id="title" class="text-center">spaceman(og) learning RWD</h1>
+            <p id="description" class="description text-center">
+                Hi. I would really like to hear your feedback about this survey-form that I built as a freeCodeCamp
+                project. Your feedback will directly help me to improve. So please help. Cheers!
+            </p>
+        </header>
+
+
+        <!-- THE FORM STARTS HERE -->
+        <form id="survey-form">
+
+
+            <!-- ASKING FOR FULL NAME -->
+            <div class="form-component">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" name="name" class="form-component-inputField"
+                    placeholder="Please enter your full name/nickname here" required>
+            </div>
+
+
+            <!-- ASKING FOR EMAIL ADDRESS -->
+            <div class="form-component">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-component-inputField"
+                    placeholder="Please enter your email address here" required>
+            </div>
+
+
+            <!-- ASKING FOR NUMBER/RATING -->
+            <div class="form-component">
+                <label id="number-label" for="number">Rate my work/this page/this survey-form <span class="clue">(Range
+                        is 1 to 10. Assume 1 means Horrible and 10 means Incredible!)</span></label>
+                <input type="number" id="number" name="rating" min="1" max="10" class="form-component-inputField"
+                    placeholder="Rate">
+            </div>
+
+
+            <!-- ASKING FOR USER AREA OF EXPERTISE, DROP DOWN MENU -->
+            <div class="form-component">
+                <p>Please select your Area of Expertise from this drop-down menu</p>
+                <select id="dropdown" name="expertise" class="form-component-dropDown" required>
+                    <option disabled="" selected="" value="">Select from here</option>
+                    <option value="frontEndDeveloper">Front-end web developer</option>
+                    <option value="backEndDeveloper">Back-end web developer</option>
+                    <option value="fullStackDeveloper">Full-stack web developer</option>
+                    <option value="uiUxExpert">UI/UX expert</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+
+            <!-- ASKING ABOUT RECOMMENDATION, RADIO BUTTONS -->
+            <div class="form-component">
+                <p>Would you recommend me to a client?</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio-1"
+                        checked="">Definitely</label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio-2">Maybe</label>
+
+                <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio-3">Not sure</label>
+            </div>
+
+
+            <!-- ASKING FOR IMPROVEMENT AREAS, CHECKBOX -->
+            <div class="form-component">
+                <p>
+                    What would you recommend me to improve?
+                    <span class="clue">(Please check all that apply)</span>
+                </p>
+
+                <label><input name="improvementRecommendation" value="html-code" type="checkbox"
+                        class="input-checkbox">HTML code</label>
+                <label>
+                    <input name="improvementRecommendation" value="css-code" type="checkbox" class="input-checkbox">CSS
+                    code</label>
+
+                <label><input name="improvementRecommendation" value="user-interface" type="checkbox"
+                        class="input-checkbox">User Interface/UI</label>
+
+                <label><input name="improvementRecommendation" value="user-experience" type="checkbox"
+                        class="input-checkbox">User Experience/UX</label>
+
+                <label><input name="improvementRecommendation" value="language-accuracy" type="checkbox"
+                        class="input-checkbox">Content language accuracy</label>
+
+                <label><input name="improvementRecommendation" value="language-readability" type="checkbox"
+                        class="input-checkbox">Content language readability or style</label>
+            </div>
+
+
+            <!-- COMMENT OR SUGGESTION TEXT AREA -->
+            <div class="form-component">
+                <p>You can provide additional comments below:</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Please use this space for writing your comment of feedback"></textarea>
+            </div>
+
+
+            <!-- SUBMIT BUTTON -->
+            <div class="form-component">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit your feedback
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

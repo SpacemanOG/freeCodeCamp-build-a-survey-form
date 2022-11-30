@@ -1,0 +1,102 @@
+/* GLOBAL */
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(59, 59, 59, 1) 100%);
+    color: #EFECEC;
+}
+
+.container {
+    width: 80vw;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+
+/* HEADER STARTS HERE */
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Caveat', cursive;
+    text-shadow: 2px 2px 1px black;
+}
+
+header p {
+    /* color: #FFB81D; */
+    color: darkgray;
+}
+
+
+/* THE FORM STARTS HERE */
+/* COMMON */
+#survey-form {
+    background-color: rgba(0, 0, 0, 1.0);
+    padding: 24px;
+    border-radius: 16px;
+    border: 2px solid #FFB81D;
+}
+
+.form-component>* {
+    display: block;
+    width: 100%;
+}
+
+.form-component:not(:first-child) {
+    padding-top: 24px;
+}
+
+.clue {
+    display: block;
+    font-size: smaller;
+    color: darkgray;
+}
+
+.form-component-inputField {
+    background-color: black;
+    border: 0;
+    border-bottom: 1px solid gray;
+    color: white;
+}
+
+
+/* COMPONENT SPECIFIC */
+/* ASKING FOR NUMBER/RATING */
+.form-component #number {
+    margin-top: 8px;
+    width: 80px;
+    height: 32px;
+    text-align: center;
+}
+
+
+/* ASKING FOR AREA OF EXPERTISE, DROP-DOWN */
+.form-component p {
+    margin: 0;
+}
+
+
+/* ADDITIONAL COMMENT, TEXTAREA */
+textarea {
+    resize: none;
+}
+
+
+/* SUBMIT BUTTON */
+.submit-button {
+    background-color: #4CAF50;
+    width: 50%;
+    height: 48px;
+    margin: 0 auto;
+}
+
+.submit-button:hover {
+    background-color: darkgreen;
+    color: white;
+    cursor: pointer;
+}
